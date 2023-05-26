@@ -1,0 +1,35 @@
+tr:hover {background-color: rgb(201, 199, 199);}
+th {
+    background-color: #035738;
+    color: white;
+    text-align: center;
+}
+td {
+    
+    text-align: center;
+}
+
+#company{
+    border-collapse: collapse;
+    width: 100%;
+    white-space:nowrap;
+
+}
+.dropdown{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px lightgrey;
+    box-shadow: 1px 1px 1px lightgray;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    background: white;
+
+}
+.list_Dropdown{
+    padding: 5;
+    border-bottom: 1px  solid lightgray;
+
+}
+
