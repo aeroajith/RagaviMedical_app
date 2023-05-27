@@ -92,11 +92,15 @@ WSGI_APPLICATION = 'MMS.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": "mydatabase",
-    }
+DATABASES={
+   'default':{
+      'ENGINE':'django.db.backends.postgresql',
+      'NAME':'MedicalDB',
+      'USER':'MedicalDB',
+      'PASSWORD':'medicaldb',
+      'HOST':'medicaldb.cl5oxhrdf1vg.us-east-1.rds.amazonaws.com',
+      'PORT':'5432',
+   }
 }
 
 
@@ -158,3 +162,15 @@ MEDIA_URL = '/media/'
 
 # Path where media is stored
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# s3 Bucket files 
+
+AWS_ACCESS_KEY_ID = 'AKIAQEXEESUTFJ5YK43K'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'medicalapp'
+AWS_S3_SIGNATURE_NAME = 's3v4',
+AWS_S3_REGION_NAME = 'ap-south-1'
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL =  None
+AWS_S3_VERITY = True
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'

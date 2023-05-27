@@ -15,8 +15,10 @@ idna==3.4
 jmespath==1.0.1
 pathspec==0.10.1
 platformdirs==2.5.2
+psycopg2-binary==2.9.6
 PyJWT==2.7.0
 pypiwin32==223
+pyscopg2==66.0.2
 python-dateutil==2.8.2
 pytz==2023.3
 pywin32==306
